@@ -8,6 +8,25 @@ body {
     overflow: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 a {
     color: #000;
     text-decoration: none !important;
@@ -155,7 +174,9 @@ a {
     transform: translate(-50%, 100%) scale(1);
 }
 
-.section {
+.section-wrapper {
+    height: 25%;
+    overflow-y: auto;
     border-top: 2px solid #fff;
     padding: 5px 10px;
 }
