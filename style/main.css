@@ -32,6 +32,10 @@ a {
     text-decoration: none !important;
 }
 
+ul {
+    list-style: url(../media/icon/check-solid.svg);
+}
+
 /* ----------------------------- */
 
 .content-wrapper {
@@ -175,10 +179,27 @@ a {
 }
 
 .section-wrapper {
-    height: 25%;
+    height: 85%;
     overflow-y: auto;
     border-top: 2px solid #fff;
-    padding: 5px 10px;
+    padding: 10px 10px;
+}
+
+.section {
+    position: absolute;
+    margin-right: 0 !important;
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+.section-hidden {
+    transform: scale(0);
+}
+
+.title {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #1b3bbc;
 }
 
 /* --------------------------- */
