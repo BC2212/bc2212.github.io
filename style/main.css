@@ -39,7 +39,7 @@ ul {
 /* ----------------------------- */
 
 .content-wrapper {
-    height: 70vh;
+    height: 80vh;
     overflow: hidden;
     padding: 30px;
     border-radius: 22px;
@@ -76,8 +76,9 @@ ul {
 }
 
 .name {
-    margin: 5% auto;
+    margin: auto;
     font-size: 1em;
+    color: #00166e;
 }
 
 .icon {
@@ -108,6 +109,7 @@ ul {
     transition: all 0.1s;
     -moz-transition: all 0.1s;
     -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
 }
 
 .social-links-icon:hover {
@@ -115,6 +117,7 @@ ul {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 [class|="button"] {
@@ -126,6 +129,9 @@ ul {
     color: #000;
     border: 2px solid #fff;
     transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     border-radius: 8px;
     cursor: pointer;
 }
@@ -145,18 +151,26 @@ ul {
     transform: translate(-50%, 0) scale(0);
     -moz-transform: translate(-50%, 0) scale(0);
     -webkit-transform: translate(-50%, 0) scale(0);
+    -ms-transform: translate(-50%, 0) scale(0);
+    -o-transform: translate(-50%, 0) scale(0);
     transform-origin: 0 100%;
     -moz-transform-origin: 0 100%;
     -webkit-transform-origin: 0 100%;
     -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
     background: #000;
     transition: all 0.75s;
+    -moz-transition: all 0.75s;
+    -webkit-transition: all 0.75s;
+    -o-transition: all 0.75s;
 }
 
 .button:hover::after {
     transform: translate(-50%, 0) scale(1);
     -moz-transform: translate(-50%, 0) scale(1);
     -webkit-transform: translate(-50%, 0) scale(1);
+    -ms-transform: translate(-50%, 0) scale(1);
+    -o-transform: translate(-50%, 0) scale(1);
 }
 
 .button-active {
@@ -164,6 +178,9 @@ ul {
     border-color: #fff;
     background: transparent;
     transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
 }
 
 .button-active::after {
@@ -176,6 +193,10 @@ ul {
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background: #fff;
     transform: translate(-50%, 100%) scale(1);
+    -moz-transform: translate(-50%, 100%) scale(1);
+    -o-transform: translate(-50%, 100%) scale(1);
+    -webkit-transform: translate(-50%, 100%) scale(1);
+    -ms-transform: translate(-50%, 100%) scale(1);
 }
 
 .section-wrapper {
@@ -189,17 +210,50 @@ ul {
     position: absolute;
     margin-right: 0 !important;
     transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
 }
 
 .section-hidden {
     transform: scale(0);
+    -moz-transform: scale(0);
+    -webkit-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
 }
 
 .title {
     font-size: 1.2em;
     font-weight: 500;
     color: #1b3bbc;
+}
+
+.checked {
+    color: rgb(255, 166, 0);
+}
+
+.image-box {
+    width: 100%;
+    position: relative;
+    padding-top: 25%;
+}
+
+.personal-image {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 /* --------------------------- */
