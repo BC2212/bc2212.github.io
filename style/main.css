@@ -242,6 +242,18 @@ ul {
     width: 100%;
     position: relative;
     padding-top: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+}
+
+.image-box:hover {
+    opacity: 0.7;
 }
 
 .personal-image {
@@ -254,6 +266,69 @@ ul {
     -webkit-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 70vw;
+    height: 90vh;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent !important;
+    background-repeat: no-repeat;
+}
+
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+
+.modal-close {
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.close {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    border-radius: 1px;
+    background-color: #fff;
+    opacity: 1 !important;
+    transition: 0.3s;
+}
+
+#modalClose:hover .close,
+#modalClose:focus .close {
+    color: focu:focus text-decoration: none;
+    cursor: pointer;
 }
 
 /* --------------------------- */

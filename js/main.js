@@ -11,12 +11,24 @@ $(function () {
         })
     })
 
-    // $(".button").click(function () {
-    //     console.log(getIndex($(this)))
-
-    //     $(this).attr('class', 'button-active');
-    // });
-
     $(button[0]).attr("class", "button-active");
     $(section[0]).removeClass("section-hidden");
-})
+
+    var imageBox = $(".image-box");
+    var modal = $("#myModal");
+    var modalImg = $("#modalContent");
+    var modalClose = $("#modalClose");
+
+    $.each(imageBox, function (i, e) {
+        $(e).click(function () {
+            var imageUrl = $(e).css("background-image");
+
+            modal.css("display", "block");
+            modalImg.css('background-image', imageUrl);
+
+            modalClose.click(function () {
+                modal.css("display", "none");
+            });
+        });
+    });
+});
