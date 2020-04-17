@@ -219,20 +219,62 @@
 
                                 <div class="post">
                                     <div class="post-title" data-toggle="collapse" data-target="#post4">
-                                        <div class="col-11">Những từ khóa và hàm thường hay sử dụng trong SQL
+                                        <div class="col-11">Trong SQL, bạn biết những từ khoá và hàm nào sau đây? Chúng
+                                            được sử dụng để làm gì? ví dụ thể hiện minh hoạ? SELECT, FROM, WHERE, GROUP
+                                            BY, HAVING, SUM, COUNT, DATEPART, WITH
                                         </div>
 
                                         <div class="col">^</div>
                                     </div>
 
                                     <div class="post-content collapse" id="post4">
-                                        <p>SQl có rất nhiều từ khóa và hàm. Nhưng nếu nói về những từ khóa và hàm thông
-                                            dụng nhất thì chắc chắn không thể không thể kể đến <i>SELECT, FROM, WHERE,
-                                                GROUP BY,
-                                                COUNT, MAX, MIN,...</i></p>
-                                        <img src="media/image/sql.png" class="post-img">
-                                        <p>Ngoài ra những lúc muốn tạo cơ sở dữ liệu hay bảng hoặc cập nhật, xóa thì lại
-                                            dùng thêm cả <i>CREATE DATABASE, CREATE TABLE, UPDATE, DROP,...</i></p>
+                                        <ul>
+                                            <li>
+                                                <b>SELECT:</b> Lấy dữ liệu từ cơ sở dữ liệu
+                                            </li>
+
+                                            <li>
+                                                <b>FROM:</b> Chọn ra bảng cần lấy dữ liệu
+                                            </li>
+
+                                            <li>
+                                                <b>WHERE:</b> Lọc ra các dòng dữ liệu phù hợp với điều
+                                                kiện đã cho
+                                            </li>
+
+                                            <li>
+                                                <b>GROUP BY:</b> Gom nhóm các dòng dữ liệu có cùng giá trị
+                                            </li>
+
+                                            <li>
+                                                <b>HAVING:</b> Lọc ra các dòng dữ liệu phù hợp với điều kiện đã cho sau
+                                                khi gom nhóm
+                                            </li>
+
+                                            <li>
+                                                <b>COUNT:</b> Đếm các dòng dữ liệu
+                                                <ul>
+                                                    <li>
+                                                        <i>COUNT(*)</i>: Đếm các dòng dữ liệu bao gồm cả NULL
+                                                    </li>
+
+                                                    <li>
+                                                        <i>COUNT(tên cột):</i> Đếm các dòng dữ liệu không chứa NULL
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <b>DATEPART:</b> Trả về một phần cụ thể của các kiểu dữ liệu ngày tháng,
+                                                tùy thuộc thông số truyền vào mà kết quả có thể là ngày, tháng, năm,
+                                                tuần, quý, giờ,...
+                                            </li>
+
+                                            <li>
+                                                <b>WITH:</b> Tạo ra một bảng tạm. Chức năng này giống với VIEWS, nhưng
+                                                khác biệt ở chỗ WITH không cần câu lệnh xóa
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
 
