@@ -21,6 +21,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            allow_html_in_named_anchor: true
+        });
+    </script>
 
     <title>{% block title %}{% endblock  %}</title>
 </head>
@@ -33,7 +40,8 @@
             <div class="row">
                 <div class="col-4 personal-info">
                     <div class="row">
-                        <img src="{% static 'media/image/profile picture.png' %}" alt="Profile Picture" class="profile-picture">
+                        <img src="{% static 'media/image/profile picture.png' %}" alt="Profile Picture"
+                            class="profile-picture">
                     </div>
 
                     <div class="row">
@@ -152,16 +160,19 @@
                                     <img src="%{static 'media/image/profile picture.png' %}" class="personal-image">
                                 </div>
 
-                                <div class="col-3 image-box" style="background-image: url({% static 'media/image/logo.jpg' %})">
+                                <div class="col-3 image-box"
+                                    style="background-image: url({% static 'media/image/logo.jpg' %})">
                                     <img src="{% static 'media/image/logo.jpg' %}" class="personal-image">
                                 </div>
 
                                 <div class="col-3 image-box"
                                     style="background-image: url({% static 'media/image/ac996bfaaeb957e70ea8.jpg' %})">
-                                    <img src="{% static 'media/image/ac996bfaaeb957e70ea8.jpg' %}" class="personal-image">
+                                    <img src="{% static 'media/image/ac996bfaaeb957e70ea8.jpg' %}"
+                                        class="personal-image">
                                 </div>
 
-                                <div class="col-3 image-box" style="background-image:
+                                <div class="col-3 image-box"
+                                    style="background-image:
                                     url({% static 'media/image/71838234_2388505694796596_6644547786844930048_o.jpg' %})">
                                     <img src="{% static 'media/image/71838234_2388505694796596_6644547786844930048_o.jpg' %}"
                                         class="personal-image">

@@ -124,3 +124,11 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
    os.path.join(BASE_DIR, "static"),
 ]
+
+# Config Tinymce
+TINYMCE_JS_URL = STATIC_URL + 'tinymce/tinymce.min.js'
+TINYMCE_DEFAULT_CONFIG = {
+    'theme': "silver",
+    'selector': 'textarea',
+    # 'style_formats': [{title: ''}]
+}
